@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <com.igalata.bubblepicker.rendering.BubblePicker
+       android:id="@+id/bubble"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:backgroundColor="@color/backgroundcolor" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:weightSum="3"
+    android:background="@color/background1">
+   <Button
+       android:id="@+id/button_start"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="Start"
+       android:layout_gravity="center_vertical"/>
+   <TextView
+       android:id="@+id/text_view_countdown"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/text"
+       android:layout_weight="1"
+       android:textSize="@dimen/textsize"
+       android:textColor="@android:color/white"
+       />
+   <Button
+       android:id="@+id/button_pause"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Pause"
+       android:layout_weight="1"
+       android:layout_gravity="center_vertical"/>
+
+</LinearLayout>
+</RelativeLayout>
